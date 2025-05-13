@@ -1,0 +1,15 @@
+/* estilos.css */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.btn-outline-primary {
+    border-color: #794aff;
+    color: #794aff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #794aff;
+    color: white;
+}

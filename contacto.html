@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - Optimus Wash</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> <!-- Carga de iconos -->
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #794aff;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="Optimus Wash" width="40" height="40" class="me-2">
+        Optimus Wash
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido de la página de contacto -->
+  <div class="container mt-5">
+    <h2>Contacto</h2>
+    <p>Si tienes alguna pregunta, no dudes en ponerte en contacto con nosotros usando el siguiente formulario o mediante WhatsApp.</p>
+
+    <!-- Formulario de contacto -->
+    <form id="contactForm" novalidate>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+        <div class="invalid-feedback">
+          Por favor, ingresa tu nombre.
+        </div>
+        <div class="valid-feedback">
+          ¡Todo listo!
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="correo" placeholder="Tu correo electrónico" required>
+        <div class="invalid-feedback">
+          Por favor, ingresa un correo electrónico válido.
+        </div>
+        <div class="valid-feedback">
+          ¡Todo listo!
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+        <div class="invalid-feedback">
+          Por favor, ingresa un mensaje.
+        </div>
+        <div class="valid-feedback">
+          ¡Todo listo!
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">
+        <i class="bi bi-envelope"></i> Enviar Mensaje
+      </button>
+    </form>
+
+    <!-- Botón de contacto por WhatsApp -->
+    <div class="mt-4">
+      <a href="https://wa.link/io2hhk" class="btn btn-success w-100" target="_blank">
+        <i class="bi bi-telephone"></i> Contactar por WhatsApp
+      </a>
+    </div>
+  </div>
+  
+  <footer class="text-center text-white py-3 mt-auto" style="background-color: #794aff;">
+    <p class="mb-0">© 2025 Optimus Wash - Todos los derechos reservados</p>
+</footer>
+
+  <!-- Archivos JS de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+  <!-- Validación de formulario -->
+  <script>
+    // Función para activar la validación del formulario
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      if (form.checkValidity() === false) {
+        event.stopPropagation();
+      } else {
+        // Aquí puedes manejar el envío del formulario si es válido
+        alert('Formulario enviado correctamente');
+      }
+      form.classList.add('was-validated');
+    });
+  </script>
+
+</body>
+</html>

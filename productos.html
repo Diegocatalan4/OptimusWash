@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo - Optimus Wash</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #794aff;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Optimus Wash" width="40" height="40" class="me-2">
+                Optimus Wash
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Catálogo -->
+    <main class="container py-5">
+        <h2 class="text-center mb-4 text-dark">Nuestras lavadoras</h2>
+        <div class="row g-4">
+
+            <!-- Producto 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/lavadora1.png" class="card-img-top" alt="Lavadora Modelo A1" />
+                    <div class="card-body">
+                        <h5 class="card-title">Modelo A1 SmartWash</h5>
+                        <p class="card-text">Lavadora inteligente de carga frontal con conectividad WiFi, ahorro de energía y 15 programas de lavado.</p>
+                        <p class="fw-bold text-primary">Q3,999</p>
+                        <a href="#" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#productoModalA1">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/lavadora2.png" class="card-img-top" alt="Lavadora Modelo B2" />
+                    <div class="card-body">
+                        <h5 class="card-title">Modelo B2 EcoWash</h5>
+                        <p class="card-text">Diseñada para cuidar el ambiente, con bajo consumo de agua y motor silencioso. Ideal para familias pequeñas.</p>
+                        <p class="fw-bold text-primary">Q3,299</p>
+                        <a href="#" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#productoModalB2">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/lavadora3.png" class="card-img-top" alt="Lavadora Modelo C3" />
+                    <div class="card-body">
+                        <h5 class="card-title">Modelo C3 PowerWash</h5>
+                        <p class="card-text">Potencia y eficiencia en un diseño robusto con tambor de acero inoxidable y carga de 15kg.</p>
+                        <p class="fw-bold text-primary">Q4,499</p>
+                        <a href="#" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#productoModalC3">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-white py-3 mt-auto" style="background-color: #794aff;">
+        <p class="mb-0">© 2025 Optimus Wash - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Modales de Producto -->
+
+    <!-- Modal Producto A1 -->
+    <div class="modal fade" id="productoModalA1" tabindex="-1" aria-labelledby="productoModalA1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productoModalA1Label">Modelo A1 SmartWash</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="img/lavadora1.png" class="img-fluid" alt="Lavadora Modelo A1" />
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="fw-bold">Descripción</h4>
+                            <p>Lavadora inteligente de carga frontal con conectividad WiFi, ahorro de energía y 15 programas de lavado.</p>
+                            <h5 class="fw-bold text-primary">Q3,999</h5>
+                            <p><strong>Características:</strong></p>
+                            <ul>
+                                <li>Carga frontal</li>
+                                <li>Conectividad WiFi</li>
+                                <li>Programas de lavado: 15</li>
+                                <li>Motor eficiente y silencioso</li>
+                                <li>Ahorro de energía clase A+</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary w-100 comprar-btn">Comprar ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Producto B2 -->
+    <div class="modal fade" id="productoModalB2" tabindex="-1" aria-labelledby="productoModalB2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productoModalB2Label">Modelo B2 EcoWash</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="img/lavadora2.png" class="img-fluid" alt="Lavadora Modelo B2" />
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="fw-bold">Descripción</h4>
+                            <p>Diseñada para cuidar el ambiente, con bajo consumo de agua y motor silencioso. Ideal para familias pequeñas.</p>
+                            <h5 class="fw-bold text-primary">Q3,299</h5>
+                            <p><strong>Características:</strong></p>
+                            <ul>
+                                <li>Consumo eficiente de agua</li>
+                                <li>Motor silencioso</li>
+                                <li>Ideal para hogares pequeños</li>
+                                <li>Ahorro de energía clase A++</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary w-100 comprar-btn">Comprar ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Producto C3 -->
+    <div class="modal fade" id="productoModalC3" tabindex="-1" aria-labelledby="productoModalC3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productoModalC3Label">Modelo C3 PowerWash</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="img/lavadora3.png" class="img-fluid" alt="Lavadora Modelo C3" />
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="fw-bold">Descripción</h4>
+                            <p>Potencia y eficiencia en un diseño robusto con tambor de acero inoxidable y carga de 15kg.</p>
+                            <h5 class="fw-bold text-primary">Q4,499</h5>
+                            <p><strong>Características:</strong></p>
+                            <ul>
+                                <li>Motor potente</li>
+                                <li>Carga de 15kg</li>
+                                <li>Tambor de acero inoxidable</li>
+                                <li>Diseño robusto y duradero</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary w-100 comprar-btn">Comprar ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal de formulario de compra -->
+<div class="modal fade" id="modalFormularioCompra" tabindex="-1" aria-labelledby="modalFormularioLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="formCompra">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalFormularioLabel">Formulario de Compra</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <input type="hidden" id="productoSeleccionado" name="producto" />
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" required />
+            </div>
+            <div class="mb-3">
+              <label for="direccion" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="direccion" name="direccion" required />
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="tel" class="form-control" id="telefono" name="telefono" required />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success">Confirmar compra</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <!-- Tu script personalizado -->
+    <script>
+        // SweetAlert de bienvenida
+        window.addEventListener('DOMContentLoaded', () => {
+            Swal.fire({
+                title: '¡Bienvenido!',
+                text: 'Explora nuestra línea de lavadoras modernas y eficientes.',
+                icon: 'info',
+                confirmButtonText: 'Ver catálogo',
+                confirmButtonColor: '#794aff'
+            });
+        });
+
+        // Abrir el formulario de compra desde botón de producto
+        document.querySelectorAll('.comprar-btn').forEach(btn => {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                const producto = this.closest('.modal').querySelector('.modal-title').textContent;
+                document.getElementById('productoSeleccionado').value = producto;
+                const modalForm = new bootstrap.Modal(document.getElementById('modalFormularioCompra'));
+                modalForm.show();
+            });
+        });
+
+        // Validar y enviar formulario
+        document.getElementById('formCompra').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const nombre = document.getElementById('nombre').value.trim();
+            const direccion = document.getElementById('direccion').value.trim();
+            const telefono = document.getElementById('telefono').value.trim();
+
+            if (nombre && direccion && telefono) {
+                const modal = bootstrap.Modal.getInstance(document.getElementById('modalFormularioCompra'));
+                modal.hide();
+
+                Swal.fire({
+                    title: '¡Gracias por tu compra!',
+                    text: 'Nos pondremos en contacto contigo para coordinar la entrega.',
+                    icon: 'success',
+                    confirmButtonColor: '#794aff'
+                });
+
+                this.reset(); // limpiar formulario
+            } else {
+                Swal.fire({
+                    title: 'Error',
+                    text: 'Por favor completa todos los campos.',
+                    icon: 'error',
+                    confirmButtonColor: '#d33'
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>

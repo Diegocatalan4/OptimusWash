@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimus Wash | Inicio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Ícono -->
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body style="background-color: #f8f9fa;" class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #794aff;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Optimus Wash" width="40" height="40" class="me-2">
+                Optimus Wash
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center py-5 bg-light">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-dark">Optimus Wash</h1>
+            <p class="lead text-secondary">Tecnología que limpia tu vida</p>
+            <a href="productos.html" class="btn btn-primary btn-lg mt-3" style="background-color: #794aff; border: none;">
+                Ver catálogo
+            </a>
+        </div>
+    </header>
+
+    <!-- Introducción -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="img/lavadora-banner.png" class="img-fluid rounded shadow" alt="Lavadoras modernas">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-3">Bienvenidos a Optimus Wash</h2>
+                    <p>
+                        Somos una empresa dedicada a la fabricación de lavadoras inteligentes de alta calidad. 
+                        Combinamos innovación, eficiencia y accesibilidad para ofrecerte productos que se adaptan a tu estilo de vida.
+                    </p>
+                    <p>
+                        Con una visión clara de mejorar la vida en el hogar, nuestras lavadoras están diseñadas para brindarte control, 
+                        durabilidad y un diseño moderno.
+                    </p>
+                    <button class="btn btn-outline-primary" onclick="mostrarBienvenida()">Saber más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center text-white py-3 mt-auto" style="background-color: #794aff;">
+        <p class="mb-0">© 2025 Optimus Wash - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script personalizado -->
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
+
